@@ -3,7 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import Navigation from "../components/navigation"
 import 'prismjs/themes/prism-okaidia.css';
 
-export default ({ children }) => {
+export default ({ children, props }) => {
   const data = useStaticQuery(
     graphql`
       query {
@@ -16,17 +16,17 @@ export default ({ children }) => {
     `
   )
   return (
+    <>
+    <div className="top-line"></div>
     <div className="site-wrapper">
       <header className="site-header">
-        <div className="site-title">
-          <Link to="/">{data.site.siteMetadata.title}</Link>
-        </div>
         <Navigation />
       </header>
       {children}
       <footer className="site-footer">
-        <p>&copy; 2020 Delog &bull; Crafted with <span role="img" aria-label="love">❤️</span> by <a href="https://w3layouts.com">W3Layouts</a></p>
+        <p>&copy; This site is based on the template Delog from <a href="https://w3layouts.com">W3Layouts</a></p>
       </footer>
     </div>
+    </>
   )
 }
