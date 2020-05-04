@@ -1,9 +1,9 @@
 ---
 template: BlogPost
-path: /video-post
+path: /content-management-systems
 date: 2020-02-20T15:05:49.332Z
-title: Post with Youtube Video embed
-thumbnail: /assets/image-1.jpg
+title: Wordpress, Drupal8, Magento
+thumbnail: /assets/php-cms.jpg
 ---
 I have embedded a youtude video in this page. By adding HTML to the markdown
 
