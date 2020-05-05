@@ -4,17 +4,6 @@ import Navigation from "../components/navigation"
 import 'prismjs/themes/prism-okaidia.css';
 
 export default ({ children, props }) => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `
-  )
   return (
     <>
     <div className="top-line"></div>
