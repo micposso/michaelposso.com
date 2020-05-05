@@ -2,8 +2,8 @@
 template: BlogPost
 path: /teaching-coding-javascript-react
 date: 2020-02-21T12:12:25.364Z
-title: Teaching Coding with JavaScript and React
-thumbnail: /assets/teaching-post.jpg
+title: Online Educator
+thumbnail: /assets/platzi-blog.jpg
 metaDescription: nope
 ---
 # h1 Heading 8-)
