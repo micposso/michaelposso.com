@@ -15,9 +15,9 @@ export default (props) => (
     <div className="navigation-icons">
     <IconContext.Provider value={{ color: "black", size: "30", className: "social-icon" }}>
       <>
-        <FaGithub />
-        <FaTwitter />
-        <FaLinkedinIn />
+        <a href="https://github.com/micposso"><FaGithub /></a>
+        <a href="https://twitter.com/micposso"><FaTwitter /></a>
+        <a href="https://www.linkedin.com/in/michaelposso/"><FaLinkedinIn /></a>
         <RiFileTextLine />
       </>
     </IconContext.Provider>
