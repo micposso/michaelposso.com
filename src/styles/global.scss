@@ -1,7 +1,7 @@
 $base-font-size: 27px;
 $font-family: "Helvetica Neue",sans-serif;
-$headings: Spectral,"Times New Roman", Times, serif;
-$text: Karla, Georgia, serif;
+$headings: Halant,"Times New Roman", Times, serif;
+$text: "Roboto Condensed", Georgia, serif;
 
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
@@ -80,7 +80,7 @@ body.dark {
 }
 /* System Fonts as used by Medium and WordPress */
 body {
-  font-family: $font-family;
+  font-family: $text;
   background-color: var(--background);
   color: var(--text-color);
 }
@@ -105,6 +105,11 @@ a {
   font-weight: 300;
   width: 100%;
   justify-content: space-between;
+  .brand-container {
+    display: flex;
+    align-items: center;
+    width: 400px;
+  }
   .navigation-icons {
     display: flex;
   }
@@ -148,10 +153,10 @@ a {
 .headline {
   font-family: $headings;
   font-size: 3rem;
-  line-height: 1rem;
+  line-height: 2.7rem;
   font-weight: 900;
   letter-spacing: -1px;
-  margin-bottom: 0.5rem;
+  margin: 0 0 0 22px;
 }
 .button {
   padding: 18px 27px;
@@ -173,6 +178,7 @@ a {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
     color: var(--primary-text-color);
+    text-transform: uppercase;
     &:hover {
       background-color: var(--secondary-color);
       color: var(--primary-text-color);
@@ -190,6 +196,7 @@ a {
   margin-bottom: 32px;
   line-height: 1.5;
   font-weight: 300;
+  letter-spacing: 0px;
   .skills-container {
     width: 100%;
     .skills-icon {
@@ -285,6 +292,7 @@ a {
   }
   .post-title {
     font-size: 1.2rem;
+    line-height: 1.2rem;
     margin-bottom: 0.3rem;
   }
   .post-meta {
@@ -453,4 +461,24 @@ body.light {
     box-shadow: 0 0 0 2px;
     top: 8px;
     left: 2px
+}
+
+
+
+svg.skills-icon {
+  fill: #544ea3;
+  cursor: pointer;
+  &:hover {
+    fill: #814ea3; 
+  }
+}
+
+.avatar-icon--container {
+  width: 300px;
+  .avatar-icon {
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    border-radius:50%;
+  }
 }
