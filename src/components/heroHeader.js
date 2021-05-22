@@ -30,16 +30,12 @@ export default () => (
           <IconContext.Provider value={{ size: "80", className: "skills-icon" }}>
             <div className="skills-container">
               <FaReact />
-              <GrGraphQl />
               <FaWordpress />
               <GrGatsbyjs />
               <FaUnity  />
               <DiJavascript1 />
-              <DiNodejs />
               <DiPhp />
               <FaAws />
-              <DiMysql />
-              <DiMongodb />
             </div>
           </IconContext.Provider>
         </div>

@@ -13,6 +13,7 @@ module.exports = {
     siteUrl: `https://delog-w3layouts.netlify.com/`, 
     home: {
       title: `Michael Posso`,
+      subtitle: 'Full Stack Developer | Technology Educator',
       description: `DevOps focused, Full Stack developer with experience buiding custom CMS solutions for enterprise organizations. My side passion is helping others learn with the use of virtual reality technologies.`,
       tagline: ` Always curious, Always learning.`,
     },
